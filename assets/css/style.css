@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background:radial-gradient(circle,rgb(61, 58, 159) 100%, rgb(80, 2, 116) 98% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    color: aliceblue;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.container-input label{
+    margin: 2rem 0 0.5rem 0;
+}
+
+.container-input input{
+    height: 3vh;
+    padding-left: 0.5rem;
+    border: 0;
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(80, 2, 116);
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.container-input input:hover{
+    transform: scale(1.02);
+}
+
+.container-input input:focus{
+    outline: none;
+}
+
+.result{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 2em;
+    position: absolute; 
+}
+
+.container h2::before{
+    position: absolute;
+    content: '';
+    height: 2.5px;
+    width: 25vh;
+    background: linear-gradient(90deg,rgb(128, 123, 255), rgb(80, 2, 116), rgb(9, 12, 153)) ;
+    bottom: 1px;
+    border-radius: 1px;
+}
+
+
+button{
+    background: linear-gradient(90deg,rgb(128, 123, 255), rgb(80, 2, 116), rgb(9, 12, 153)) ;
+    color: aliceblue;
+    font-size: 1.2em;
+    margin: 1rem 0 2rem 0;
+    border: none;
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
