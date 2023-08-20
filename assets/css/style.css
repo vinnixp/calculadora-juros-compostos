@@ -16,24 +16,31 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 60%;
     background-color: black;
     color: aliceblue;
     padding: 2rem;
     border-radius: 20px;
+    text-align: left;
+    
+}
+
+.title{
+    font-size: 1.5em;
+    margin-bottom: 0.2rem;
 }
 
 .container-input{
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
     text-align: left;
     width: 100%;
 }
 
+
 .container-input label{
-    margin: 2rem 0 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
 }
 
 .container-input input{
@@ -43,6 +50,7 @@ body{
     color: aliceblue;
     background-color: transparent;
     border: none;
+    text-decoration: none;
     border-bottom: 1px solid rgb(80, 2, 116);
     font-size: 1em;
     transition: 0.5s;
@@ -57,38 +65,58 @@ body{
 }
 
 .result{
-    margin-top: 1rem;
+    margin: 1rem 0 0 0;
     text-align: center;
+    font-size: 1em;
 }
 
-.container h2{
+#total{
     font-size: 2em;
-    position: absolute; 
 }
-
-.container h2::before{
-    position: absolute;
-    content: '';
-    height: 2.5px;
-    width: 25vh;
-    background: linear-gradient(90deg,rgb(128, 123, 255), rgb(80, 2, 116), rgb(9, 12, 153)) ;
-    bottom: 1px;
-    border-radius: 1px;
-}
-
 
 button{
     background: linear-gradient(90deg,rgb(128, 123, 255), rgb(80, 2, 116), rgb(9, 12, 153)) ;
     color: aliceblue;
-    font-size: 1.2em;
-    margin: 1rem 0 2rem 0;
-    border: none;
-    padding: 0.2rem;
+    width: 70%;
+    margin: 0.4rem 0 0 0;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1em;
     cursor: pointer;
+    align-self: center;
     transition: 0.5s;
 }
 
 button:hover{
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 420px)  {
+
+    .container{
+        border-radius: 20px;
+        width: 65%;
+        padding: 2rem;
+        position: fixed;
+        
+    }
+
+    .title{
+        font-size: 1.5em;
+        position: absolute;
+        margin-bottom: 3rem;
+        margin: 0 1rem 0 0;
+    }
+
+    .container-input{
+
+        width: 100%;
+        font-size: 1em;
+        margin: auto;
+    }
+
+    
+
+  }
+
 

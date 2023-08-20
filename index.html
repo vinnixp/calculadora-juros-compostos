@@ -9,23 +9,28 @@
 <body>
 
     <div class="container">
-        <h2>Calculadora de juros compostos</h2>
+
+        <h2 class="title">Calculadora de juros compostos</h2>
+
         <div class="container-input">
-            <label>Valor inicial(capital)</label>
-            <input type="text">
-            <label>Taxa de juros a.m</label>
-            <input type="text">
-            <label>Tempo de rendiemnto (em meses)</label>
-            <input type="text">
+            <label for="valor">Valor inicial (capital)</label>
+            <input type="text" maxlength="8" id="valor" >
+        
+            <label for="taxa">Taxa de juros a.m</label>
+            <input type="text" required maxlength="3" id="taxa" >
+
+            <label for="tempo">Tempo de rendiemnto (em meses)</label>
+            <input type="text" maxlength="2" id="tempo">
         </div>
 
         <div class="result">
-            <h4>Resultado:</h4>
-            <h1>R$ <span>0,00</span></h1>
+            <h5>Resultado:</h5>
+            <span id="total">R$ 0,00</span>
         </div>
 
-        <button>Calcular</button>
+        <button id="calcular">Calcular</button>
     </div>
     
 </body>
+<script src="assets/js/script.js"></script>
 </html>
