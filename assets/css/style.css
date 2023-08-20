@@ -98,7 +98,6 @@ button:hover{
         width: 65%;
         padding: 2rem;
         position: fixed;
-        
     }
 
     .title{
@@ -109,13 +108,10 @@ button:hover{
     }
 
     .container-input{
-
         width: 100%;
         font-size: 1em;
         margin: auto;
     }
-
-    
 
   }
 
